@@ -1,1 +1,38 @@
+{
+  "name": "my-ghost-theme",
+  "version": "1.0.0",
+  "description": "My custom Ghost theme",
+  "main": "index.hbs",
+  "scripts": {
+    "start": "ghost start"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "ghost": {
+    "posts_per_page": 10,
+    "image_sizes": {
+      "small": 300,
+      "medium": 600,
+      "large": 1000
+    },
+    "custom_settings": [
+      {
+        "key": "body_font",
+        "label": "Body Font",
+        "type": "select",
+        "options": [
+          {
+            "value": "sans-serif",
+            "label": "Sans-serif"
+          },
+          {
+            "value": "serif",
+            "label": "Serif"
+          }
+        ],
+        "default": "sans-serif"
+      }
+    ]
+  }
+}
 

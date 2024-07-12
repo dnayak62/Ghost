@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{@post.title}}</title>
+    <meta name="description" content="{{@post.excerpt}}">
+    <!-- Add your CSS, meta tags, etc. here -->
+</head>
+<body>
+    <header>
+        <h1>{{@post.title}}</h1>
+        <p>Published on {{formatDate @post.published_at}}</p>
+    </header>
+    <main>
+        <article>
+            {{@post.html}}
+        </article>
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
 

@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{@site.title}}</title>
+    <meta name="description" content="{{@site.description}}">
+    <!-- Add your CSS, meta tags, etc. here -->
+</head>
+<body>
+    <header>
+        <h1>{{@site.title}}</h1>
+        <p>{{@site.description}}</p>
+    </header>
+    <main>
+        <section>
+            <h2>Latest Posts</h2>
+            {{#foreach posts}}
+                <article>
+                    <h3><a href="{{url}}">{{title}}</a></h3>
+                    <p>{{excerpt}}</p>
+                </article>
+            {{/foreach}}
+        </section>
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
 
